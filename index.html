@@ -6,42 +6,556 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contrat Workplaces</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Thin";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Thin"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueThin.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Light";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Light"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueLight.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Regular";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Regular"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueRegular.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Medium";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Medium"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueMedium.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque SemiBold";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque SemiBold"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueSemiBold.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Bold";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Bold"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueBold.woff") format("woff")
+    }
+
+    @font-face {
+      font-family: "Galano Grotesque Heavy";
+      font-style: normal;
+      font-weight: normal;
+      src: local("Galano Grotesque Heavy"), url("https://contractworkplaces.com/web/wp-content/themes/dropout/fonts/galano/GalanoGrotesqueHeavy.woff") format("woff")
+    }
+  </style>
 </head>
 
 <body>
 
-  <section class="hero">
-    <h1>¡Contáctanos!</h1>
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Hero -->
+  <section class="contact__hero">
+    <div class="u-row u-wrapper">
+      <div class="u-col u-col--nopad">
+        <h1 class="o-h1">¡Contáctanos!</h1>
+      </div>
+      <div class="u-col u-col--center">
+        <div class="contact__hero__form" style="width: 100%; height: 100vh;">
+          Form
+        </div>
+      </div>
+    </div>
+    <div class="contact__hero__bg"
+      style="background-image: url(https://contractworkplaces.com/web/wp-content/headers/header-team.jpg);">
+    </div>
   </section>
-  <!-- Dónde estamos -->
-  <h2 class="o-h2">Dónde estamos</h2>
-  <h2 class="o-h2">¿Quieres ser parte de nuestro equipo? </h2>
-  <h3>Súmate al <span>#ModoContract</span></h3>
-  <h2 class="o-h2">¡Únete a nuestra cadena de valor!</h2>
-  <h2 class="o-h2">¿Quieres ser parte de nuestro equipo? </h2>
-  <h2 class="o-h2">¡Hablemos sobre tu proyecto!</h2>
-  <footer>
-    <h2>Manténte informado sobre las últimas tendencias del universo de los espacios de trabajo </h2>
-    <div class="u-wrapper">
-      <div class="o-h4">Síguenos
-        <ul>
-          <li>Línea Ética</li>
-          <li>Términos y Condiciones</li>
-          <li>Dónde Estamos</li>
+
+  <article class="contact">
+    <!-- Dónde estamos -->
+    <section class="u-section u-row u-wrapper">
+      <div class="u-col">
+        <h2 class="o-h2" style="padding-top: 64px;">Dónde estamos</h2>
+        <p style="max-width: 400px;">Realizamos diseño y construcción de oficinas en todo Latinoamérica.</p>
+        <br />
+        <ul class="u-list">
+          <li><a class="js-slide" data-slide="0">Argentina</a></li>
+          <li><a class="js-slide" data-slide="1">Bolivia</a></li>
+          <li><a class="js-slide" data-slide="2">Brasil</a></li>
+          <li><a class="js-slide" data-slide="3">Chile</a></li>
+          <li><a class="js-slide" data-slide="4">Colombia</a></li>
+          <li><a class="js-slide" data-slide="5">Costa Rica</a></li>
+          <li><a class="js-slide" data-slide="6">Ecuador</a></li>
+          <li><a class="js-slide" data-slide="7">México</a></li>
+          <li><a class="js-slide" data-slide="8">Panamá</a></li>
+          <li><a class="js-slide" data-slide="9">Paraguay</a></li>
+          <li><a class="js-slide" data-slide="10">Perú</a></li>
+          <li><a class="js-slide" data-slide="11">Uruguay</a></li>
         </ul>
       </div>
-      <div class="o-h4">Suscríbete a nuestro Newsletter</div>
+      <div class="u-col">
+        <div class="contacto-slider">
+          <!-- Slider -->
+          <div class="swiper slideImg">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-arg.jpg"
+                      alt="Argentina">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-bol.jpg"
+                      alt="Bolivia">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-bra.jpg"
+                      alt="Brasil">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-chi.jpg"
+                      alt="Chile">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-col.jpg"
+                      alt="Colombia">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-cos.jpg"
+                      alt="Costa Rica">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-ecu.jpg"
+                      alt="Ecuador">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-mex.jpg"
+                      alt="México">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-pan.jpg"
+                      alt="Panamá">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-par.jpg"
+                      alt="Paraguay">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-per.jpg"
+                      alt="Perú">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__pic">
+                    <img src="https://contractworkplaces.com/web/wp-content/uploads/2023/08/contacto-uru.jpg"
+                      alt="Uruguay">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"><img
+                src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/slide-arrow.svg"
+                alt="Siguiente"></div>
+            <div class="swiper-button-prev"><img
+                src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/slide-arrow.svg" alt="Anterior"
+                style="transform: rotate(180deg);"></div>
+          </div>
+          <div class="swiper slideData">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>ARGENTINA <span>•</span> <em>Buenos Aires</em></h3>
+                      <p>Manuel Ugarte 1665/67, Piso 5º</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/kw9Lj6ogbDjQWzsz5" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>BOLIVIA <span>•</span> <em>Santa Cruz de la Sierra</em></h3>
+                      <!-- <p></p> -->
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>BRASIL <span>•</span> <em>Sao Paulo</em></h3>
+                      <p>Praça João Duran Alonso 34, Cidade Monções<br />Athie Wohnrath</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/bDGsK5qCaJpxML347" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>CHILE <span>•</span> <em>Santiago</em></h3>
+                      <p>Kennedy 7600, Piso 7º, Vitacura</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/zv5QBwYm8RLqnSsR8" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>COLOMBIA <span>•</span> <em>Bogotá</em></h3>
+                      <p>Avenida Carrera 9 No. 115-06 <br />Edificio Tierra Firme, Oficina 2001</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/p4swaXFvXpz4py3e7" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>COSTA RICA <span>•</span> <em>San José</em></h3>
+                      <p>Avenida Escazú, Torre Lexus, Piso 4, Locales 5 y 6</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/YcjAJMK4rjTtXoYx5" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>ECUADOR <span>•</span> <em>Quito</em></h3>
+                      <p>Av. 6 de Diciembre y Juan Boussingault <br />Edificio Torre 6 piso 7 of. 701</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/jYp4NoPknV4PRbBe6" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>MÉXICO <span>•</span> <em>Ciudad de México</em></h3>
+                      <p>Av. Ejército Nacional 676, Piso 7° <br />Colonia Polanco III Sección</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/A4M6BpCeCsrXDtpB7" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>PANAMÁ <span>•</span> <em>Panamá</em></h3>
+                      <p>Calle Primera, El Carmen, Nº 111</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/7joLAs45G32DPK1X7" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>PARAGUAY <span>•</span> <em>Asunción</em></h3>
+                      <p>Av. Aviadores del Chaco 2050, 16C<br />World Trade Center Asunción, Torre 4</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/A2FnuNioUE8S76wu5" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>PERÚ <span>•</span> <em>Lima</em></h3>
+                      <p>Av. República de Panamá 3461 | Int. 1601 Urb <br />El Palomar, San Isidro</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/DfxZA6VjeL4f647i9" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__info">
+                    <div class="slide__address">
+                      <h3>URUGUAY <span>•</span> <em>Montevideo</em></h3>
+                      <p>Dr. Luis Bonavita 1266, 101<br />World Trade Center Torre 4</p>
+                      <a href="mailto:info@contractworkplaces.com">info@contractworkplaces.com</a>
+                    </div>
+                    <div class="slide__map">
+                      <a href="https://goo.gl/maps/1TxrgP2aDnJbzTSD8" target="_blank"><img
+                          src="https://contractworkplaces.com/web/wp-content/themes/dropout/images/ico-map.svg">Ver
+                        mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="u-section u-row u-wrapper">
+      <div class="u-col u-col-line">
+        <h2 class="o-h2">¿Quieres ser parte <br />de nuestro equipo?</h2>
+        <img src="assets/staff.png" alt="Staff" style="margin-top: 48px;">
+      </div>
+      <div class="u-col">
+        <h3 class="o-h3">Súmate al <span style="display:block;">#ModoContract</span><br /></h3>
+        <ul class="u-links">
+          <li>
+            <a href="#">Ingresa tu hoja de vida aquí
+              <img src="assets/link-arrow.svg" alt="Arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">Conoce las búsquedas laborales activas
+              <img src="assets/link-arrow.svg" alt="Arrow">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Proveedores -->
+    <section class="u-section u-row u-wrapper">
+      <div class="u-col u-col-line">
+        <h2 class="o-h2">¡Únete a nuestra <br />cadena de valor!</h2>
+      </div>
+      <div class="u-col">
+        <p class="u-max-w-50">Para formar parte de nuestro staff de proveedores, ingresa los datos de tu empresa y nos
+          contactaremos a la brevedad.</p><br />
+        <a href="/contacto" class="o-btn o-btn--outline">Entra aquí</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2 class="o-h2"><span class="u-block">¡Hablemos</span> sobre tu proyecto!</h2>
+      <div class="cta__image">
+        <img src="assets/hablemos.jpg" alt="Hablemos">
+        <a href="/contacto" class="o-btn">Haz tu consulta aquí</a>
+      </div>
+    </div>
+
+    <!-- <div class="modal modal--hablemos">
+      <div class="modal__close close--hablemos">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243">
+          <g id="icon_close" data-name="close" transform="translate(488.621 -23.379)">
+            <line id="line_1" data-name="line 1" x2="24" y2="24" transform="translate(-486.5 25.5)" fill="none"
+              stroke="#fff" stroke-linecap="round" stroke-width="2" />
+            <line id="line_2" data-name="line 2" x1="24" y2="24" transform="translate(-486.5 25.5)" fill="none"
+              stroke="#fff" stroke-linecap="round" stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+      <div class="modal__container">
+        [contact-form-7 id="5527" title="Formulario - Pagina Contacto"]' );
+      </div>
+    </div>
+    <script>
+      // Hablemos
+      const triggerHablemos = document.querySelector('.cta a');
+      const closeHablemos = document.querySelector('.close--hablemos');
+
+      triggerHablemos.addEventListener('click', function () {
+        event.preventDefault();
+        document.querySelector('body').classList.toggle('is--hablemos');
+      });
+
+      closeHablemos.addEventListener('click', function () {
+        document.querySelector('body').classList.toggle('is--hablemos');
+      });
+    </script> -->
+
+  </article>
+
+  <footer class="footer">
+    <h2>Manténte informado sobre las últimas tendencias del universo de los espacios de trabajo </h2>
+    <hr class="u-line">
+    <!-- <div class="u-wrapper u-row">
+      <div class="u-col u-col-nopad">
+        <h4>Síguenos</h4>
+        <ul class="u-links-footer">
+          <li><a href="">Línea Ética</a></li>
+          <li><a href="">Términos y Condiciones</a></li>
+          <li><a href="">Dónde Estamos</a></li>
+        </ul>
+      </div>
+      <div class="u-col u-col-nopad">
+        <h4>Suscríbete a nuestro Newsletter</h4>
+      </div>
     </div>
     <div class="u-wrapper">
       <div class="copyright">
         <small>
           Al entrar a este sitio Ud está aceptando los <a href="/terminos-y-condiciones" target="_blank">Términos y
-            Condiciones</a> y las Políticas de<a href="/proteccion-de-bases-de-datos" target="_blank">Protección de
+            Condiciones</a> y las Políticas de <a href="/proteccion-de-bases-de-datos" target="_blank">Protección de
             Bases de Datos</a> de Contract Workplaces. Todos los derechos reservados. © Contract Workplaces.
         </small>
       </div>
-    </div>
+    </div> -->
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var imgSwiper = new Swiper(".slideImg", {
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var dataSwiper = new Swiper(".slideData", {
+      spaceBetween: 16,
+    });
+
+    imgSwiper.controller.control = this.dataSwiper;
+    dataSwiper.controller.control = this.imgSwiper;
+
+
+    function modifySlider() {
+      imgSwiper.slideTo(0);
+    }
+
+    let btns = document.querySelectorAll('.js-slide');
+
+    btns.forEach(item => {
+      item.addEventListener('click', event => {
+        imgSwiper.slideTo(item.dataset.slide)
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>

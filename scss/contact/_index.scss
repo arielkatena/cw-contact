@@ -1,0 +1,51 @@
+.contact {
+  position: relative;
+  margin-top: 64px;
+  overflow: hidden;
+  width: 100%;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: normal;
+    color: var(--color-dark);
+    letter-spacing: -0.02em;
+  }
+  p,
+  a {
+    font-size: clamp(17.5px, 2vw, 18px);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-family: var(--font-text);
+  }
+
+  a {
+    font-family: var(--font-text);
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: 0.35s;
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+
+  ul {
+    li {
+      a {
+        font-family: var(--font-text);
+      }
+    }
+  }
+}

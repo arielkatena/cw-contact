@@ -1,0 +1,50 @@
+:root {
+  --font-title: "Galano Grotesque Heavy";
+  --font-semi: "Galano Grotesque Medium";
+  --font-text: "Galano Grotesque Regular";
+  --font-bold: "Galano Grotesque Bold";
+  --font-light: "Galano Grotesque Light";
+  --base-size: 16.5px;
+  --color-main: #dd052b;
+  --color-dark: #000;
+  --color-light: #fff;
+}
+
+$wrapper: 1280px;
+$landscape: 480px;
+$tablet-l: 1024px;
+$desktop-s: 1200px;
+$desktop-xl: 1600px;
+$pad: 16px;
+
+.o-h1 {
+  font-family: var(--font-title);
+  font-size: clamp(48px, 4vw, 72px);
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.o-h2 {
+  font-size: clamp(32px, 3vw, 36px);
+  line-height: 1;
+
+  span {
+    color: var(--color-main);
+  }
+}
+
+.o-h3 {
+  font-size: clamp(31px, 3vw, 35px) !important;
+  font-family: var(--font-light) !important;
+  line-height: 1;
+
+  span {
+    color: var(--color-main);
+  }
+}
+
+h4 {
+  font-size: clamp(22px, 1.5vw, 24px);
+}

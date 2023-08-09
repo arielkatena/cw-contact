@@ -1,0 +1,237 @@
+.u-wrapper {
+  width: 100%;
+  max-width: $wrapper * 0.9;
+  margin: auto;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-xl) {
+    max-width: $wrapper;
+  }
+}
+
+.u-h-100 {
+  height: 100%;
+}
+
+.u-section {
+  position: relative;
+  padding: clamp(60px, 5vh, 120px) 0;
+  padding: 0 0 120px 0;
+  box-sizing: border-box;
+}
+
+.u-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  @media (min-width: $landscape) {
+    flex-direction: row;
+
+    .u-col:first-child {
+      max-width: 500px;
+    }
+  }
+}
+
+.u-col {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 $pad $pad * 2 $pad;
+  box-sizing: border-box;
+
+  @media (min-width: $landscape) {
+    width: 50%;
+    flex-basis: 50%;
+  }
+
+  &--nopad {
+    @media (min-width: $landscape) {
+      padding: 0;
+    }
+  }
+
+  &--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.u-pad {
+  padding: $pad * 2;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-col-line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -32px;
+    left: $pad;
+    width: 48px;
+    height: 4px;
+    background-color: var(--color-dark);
+    display: block;
+    content: "";
+  }
+}
+
+.u-max-w-50 {
+  width: 90%;
+
+  @media (min-width: $landscape) {
+    max-width: 75%;
+  }
+
+  // @media (min-width: $desktop-xl) {
+  //   max-width: 90%;
+  // }
+}
+
+.o-btn {
+  display: inline-block;
+  outline: none;
+  margin: 10px auto;
+
+  background: var(--color-dark);
+  border-radius: 99px;
+  padding: $pad $pad * 2.5;
+
+  font-family: var(--font-bold) !important;
+  font-weight: 400;
+  font-size: clamp(18.5px, 2vw, 20px) !important;
+  letter-spacing: -0.02em !important;
+  color: var(--color-light) !important;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--color-main);
+    color: var(--color-light);
+  }
+
+  &--outline {
+    border: 1px solid var(--color-dark);
+    background: var(--color-light);
+    color: var(--color-dark) !important;
+
+    &:hover {
+      background: var(--color-dark);
+      color: var(--color-light) !important;
+    }
+  }
+}
+
+.u-list {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 $pad * 1.25;
+  columns: 2;
+
+  // @media (min-width: $landscape) {
+  //   columns: 3;
+  // }
+
+  li {
+    padding: $pad * 0.25 0;
+
+    &::marker {
+      color: var(--color-main);
+    }
+
+    a {
+      font-family: var(--font-text);
+      font-size: clamp(17.5px, 2vw, 18px);
+      cursor: pointer;
+    }
+  }
+}
+
+.u-links {
+  margin: $pad * 1.5 0 0;
+  padding: 0;
+  border-top: 1px solid #ccc;
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+
+    a {
+      // display: block;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      grid-gap: 16px;
+
+      padding: $pad * 0.75 0;
+      font-family: var(--font-text);
+      color: var(--color-dark);
+
+      @media (min-width: $desktop-s) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      svg,
+      img {
+        width: 20px;
+        height: 17px;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.u-links-footer {
+  margin: $pad * 1.5 0 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-gap: 10px;
+
+  li {
+    display: inline;
+    list-style: none;
+    font-family: var(--font-title);
+    letter-spacing: -0.02em;
+
+    a {
+      // display: block;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: flex-start;
+      grid-gap: 16px;
+
+      padding: $pad * 0.75 0;
+      font-family: var(--font-bold);
+      color: var(--color-dark);
+    }
+  }
+}
+
+.u-line {
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+  margin: 0 auto 64px auto;
+}
+
+.u-hide {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
