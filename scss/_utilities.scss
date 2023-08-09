@@ -1,10 +1,11 @@
 .u-wrapper {
   width: 100%;
-  max-width: $wrapper * 0.9;
+  // max-width: $wrapper * 0.9;
   margin: auto;
   box-sizing: border-box;
 
-  @media (min-width: $desktop-xl) {
+  @media (min-width: $tablet-l) {
+    // max-width: $wrapper;
     max-width: $wrapper;
   }
 }
